@@ -38,5 +38,22 @@ Add this line (example):
 ```html
 <p><strong>Deployed by:</strong> DMI Cohort 2 | Rahul Sharma | Group 4 | Week 1 | 16-01-2026</p>
 ```
+## What I did
+Footer requirement:
+ I added these text: Pravin Mishra Portfolio v1.0 — Deployed on 05 feb 2026 — By CHIOMA MARGARET NWOSU
+ and also replace the date with a span id 'deployDate'
+
+How date is generated: Using ChatGPT to generate a JS code snippet for 'deployDate'
+<script>
+const dateElement = document.getElementById('deployDate');
+const now = new Date();
+const options = { day: '2-digit', month: 'short', year: 'numeric' };
+
+const formattedDate = now.toLocaleDateString('en-US', options);
+dateElement.textContent = formattedDate;
+
+</script>
+
+A small code snippet (footer section + JS if used): 
 
 ✅ This proof must be visible in your browser screenshot submission.
